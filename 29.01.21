@@ -1,0 +1,27 @@
+sampleDict = { 
+ "name": "Kelly",
+ "age":25, 
+ "salary": 8000, 
+ "city": "New york" }
+d={}
+for i,j in sampleDict.items():
+    if i==("name") or i==("salary"):
+        d[i]=sampleDict[i]
+print(d)
+
+
+sampleDict = {
+     'emp1': {'name': 'Jhon', 'salary': 7500},
+     'emp2': {'name': 'Emma', 'salary': 8000},
+     'emp3': {'name': 'Brad', 'salary': 6500}
+}
+sampleDict['emp3']['salary'] = 8500
+print(sampleDict)
+
+
+sampleDict = {
+  'Physics': 82,
+  'Math': 65,
+  'history': 75
+}
+print(min(sampleDict, key=sampleDict.get))
